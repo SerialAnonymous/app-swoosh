@@ -225,12 +225,58 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="mOh-bl-en8">
+                                <rect key="frame" x="20" y="175" width="335" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hf2-Rt-RZL" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="155" height="50"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.39985552229999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="HFI-Mw-2BE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                        <state key="normal" title="Beginner">
+                                            <color key="titleColor" red="0.99019607840000001" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bzl-14-Gu3" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
+                                        <rect key="frame" x="180" y="0.0" width="155" height="50"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.39985552229999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="NTW-t3-HJB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                        <state key="normal" title="Baller">
+                                            <color key="titleColor" red="0.99019607840000001" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxz-pg-dFU" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
+                                <rect key="frame" x="20" y="597" width="335" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.39985552229999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="RIn-jz-Uuo"/>
+                                    <constraint firstAttribute="height" constant="50" id="SJJ-X8-vbI"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="jr4-D5-DOV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="FINISHED">
+                                    <color key="titleColor" red="0.99019607840000001" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="x2n-LH-99j" firstAttribute="trailing" secondItem="gN0-9N-Pqp" secondAttribute="trailing" constant="20" id="DjK-u4-495"/>
+                            <constraint firstItem="x2n-LH-99j" firstAttribute="trailing" secondItem="mOh-bl-en8" secondAttribute="trailing" constant="20" id="G3p-7p-C4v"/>
+                            <constraint firstItem="x2n-LH-99j" firstAttribute="trailing" secondItem="xxz-pg-dFU" secondAttribute="trailing" constant="20" id="N1f-Sr-igG"/>
+                            <constraint firstItem="mOh-bl-en8" firstAttribute="leading" secondItem="x2n-LH-99j" secondAttribute="leading" constant="20" id="YbU-GS-Bzb"/>
+                            <constraint firstItem="x2n-LH-99j" firstAttribute="bottom" secondItem="xxz-pg-dFU" secondAttribute="bottom" constant="20" id="kwS-3V-vKo"/>
+                            <constraint firstItem="xxz-pg-dFU" firstAttribute="leading" secondItem="x2n-LH-99j" secondAttribute="leading" constant="20" id="lK0-WX-23r"/>
                             <constraint firstItem="gN0-9N-Pqp" firstAttribute="leading" secondItem="x2n-LH-99j" secondAttribute="leading" constant="20" id="lV9-HR-gPD"/>
                             <constraint firstItem="gN0-9N-Pqp" firstAttribute="top" secondItem="x2n-LH-99j" secondAttribute="top" constant="20" id="wLL-yw-WNk"/>
+                            <constraint firstItem="mOh-bl-en8" firstAttribute="top" secondItem="gN0-9N-Pqp" secondAttribute="bottom" constant="50" id="yKO-0f-hXl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="x2n-LH-99j"/>
                     </view>
