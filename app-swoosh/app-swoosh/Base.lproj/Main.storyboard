@@ -124,7 +124,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QTU-K7-xmM" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QTU-K7-xmM" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                 <rect key="frame" x="20" y="597" width="335" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.39985552229999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -132,9 +132,12 @@
                                     <constraint firstAttribute="height" constant="50" id="g3a-Tu-1hm"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
-                                <state key="normal" title="GET STARTED">
+                                <state key="normal" title="NEXT">
                                     <color key="titleColor" red="0.99019607840000001" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="nextBtnTapped:" destination="Cz8-Rq-H8K" eventType="touchUpInside" id="KIx-fG-dpC"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Qhc-kQ-yFG">
                                 <rect key="frame" x="20" y="175" width="335" height="190"/>
@@ -149,6 +152,9 @@
                                         <state key="normal" title="Mens">
                                             <color key="titleColor" red="0.99019607840000001" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="mensBtnTapped:" destination="Cz8-Rq-H8K" eventType="touchUpInside" id="IIw-Ab-rxH"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gC-vp-Ipq" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="70" width="335" height="50"/>
@@ -160,6 +166,9 @@
                                         <state key="normal" title="Womens">
                                             <color key="titleColor" red="0.99019607840000001" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="womensBtnTapped:" destination="Cz8-Rq-H8K" eventType="touchUpInside" id="ffT-qm-3gw"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cky-en-jRq" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="140" width="335" height="50"/>
@@ -171,6 +180,9 @@
                                         <state key="normal" title="Co-ed">
                                             <color key="titleColor" red="0.99019607840000001" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="coedsBtnTapped:" destination="Cz8-Rq-H8K" eventType="touchUpInside" id="hvW-f5-p37"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -207,6 +219,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Vsn-TX-BCx"/>
                     </view>
+                    <connections>
+                        <outlet property="nextBtn" destination="QTU-K7-xmM" id="RAd-wo-qd8"/>
+                        <segue destination="6fX-cm-bPm" kind="show" identifier="skillVCSegue" id="Pbr-yg-Dtq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hxM-tw-v8G" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="cOO-aX-2hq" userLabel="Exit" sceneMemberID="exit"/>
